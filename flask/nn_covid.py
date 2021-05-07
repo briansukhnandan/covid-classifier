@@ -15,8 +15,6 @@ from tqdm import tqdm
 from sklearn.model_selection import train_test_split
 import tensorflow.keras.layers as Layers
 
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 def run_model_prediction(filename):
 

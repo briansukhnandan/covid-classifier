@@ -3,13 +3,11 @@ import flask
 from werkzeug.utils import secure_filename
 from nn_covid import run_model_prediction
 
-UPLOAD_FOLDER = '/static/images/'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
-
 
 # Create the application.
 APP = flask.Flask(__name__)
-APP.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
 
 @APP.route('/uploader', methods = ['GET', 'POST'])
 def upload_file():
