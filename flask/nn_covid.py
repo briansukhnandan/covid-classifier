@@ -21,7 +21,6 @@ import matplotlib.pyplot as plt
 def run_model_prediction(filename):
 
     model = tf.keras.models.load_model('../saved_model/model')
-    os.remove("image.jpg")
 
     t_a = []
 
@@ -37,5 +36,6 @@ def run_model_prediction(filename):
         1 : "COVID"
     }
 
+    os.remove('image.jpg')
 
     return outcomes[ class_chosen ]
