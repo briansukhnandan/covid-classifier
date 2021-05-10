@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 
 def run_model_prediction(filename):
 
-    model = tf.keras.models.load_model('../saved_model/model')
+    model = tf.keras.models.load_model('..\\saved_model\\model')
 
     t_a = []
 
