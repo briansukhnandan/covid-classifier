@@ -21,7 +21,7 @@ def upload_file():
 def index():
     """ Displays the index page accessible at '/'
     """
-    return flask.render_template('index.html', pred="Input image")
+    return flask.render_template('index.html', pred="Waiting for Image input...")
 
 
 if __name__ == '__main__':
