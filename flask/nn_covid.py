@@ -30,8 +30,8 @@ def run_model_prediction(filename):
     class_chosen = single_img_pred[0][0]
 
     outcomes = {
-        0 : "Not COVID",
-        1 : "COVID"
+        0 : "This sample does NOT contain COVID-19.",
+        1 : "This sample contains COVID-19."
     }
 
     os.remove('image.jpg')
