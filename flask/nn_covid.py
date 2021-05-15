@@ -19,7 +19,8 @@ import tensorflow.keras.layers as Layers
 
 def run_model_prediction(filename):
 
-    model = tf.keras.models.load_model('C:\\Users\\Joseph Shimonov\\Desktop\\CTP_Project\\covid-classifier\\saved_model\\model')
+    model = tf.keras.models.load_model('../saved_model/model')
+    # model = tf.keras.models.load_model('C:\\Users\\Joseph Shimonov\\Desktop\\CTP_Project\\covid-classifier\\saved_model\\model')
 
     t_a = []
 
