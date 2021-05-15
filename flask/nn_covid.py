@@ -1,5 +1,6 @@
 import PIL
 import os
+import shutil
 import pandas as pd
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -34,6 +35,7 @@ def run_model_prediction(filename):
         1 : "This sample contains COVID-19."
     }
 
-    os.remove('image.jpg')
+    #shutil.move('/static/image.jpg', 'image.jpg')
+    os.system('cp image.jpg static/')
 
     return outcomes[ class_chosen ]
